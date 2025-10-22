@@ -55,6 +55,14 @@ class Student extends Person{
         // super is used for the callig of the parent class constructor
         this.marks=marks;
     }
+    talk(){
+        // Method overriding means the child class replaces the parent class’s version of a method.
+        // Method Overriding = If a child class has a method with the same name as the parent class,
+        // then the child's method is executed instead of the parent's method.
+
+        console.log(`I am ${this.name}`);
+        
+    }
 }
 
 let m1 = new Student("subhamoy", 25, 85)
