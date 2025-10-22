@@ -39,13 +39,23 @@ class Person {
     }
     talk (){
         console.log(`Hello, this is ${this.name}`);
-        // we can directly create the talk() function inside of the class
+        // we can directly create the talk() method inside of the class
         
     }
 
 }
 
-let m1 = new Person("subhamoy", 25)
+class Student extends Person{
+    // extends used for inherit the properties of parent class
+    // here student class inherit the properties of Person class
+    constructor(name, age, marks){
+        super(name, age);
+        // super is used for the callig of the parent class constructor
+        this.marks=marks;
+    }
+}
+
+let m1 = new Student("subhamoy", 25, 85)
 
 console.log(m1);
 
