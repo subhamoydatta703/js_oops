@@ -45,6 +45,8 @@ class Person {
 
 }
 
+// Inheritance means one class getting the properties and methods of another class.
+
 class Student extends Person{
     // extends used for inherit the properties of parent class
     // here student class inherit the properties of Person class
